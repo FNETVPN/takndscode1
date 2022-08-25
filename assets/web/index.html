@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content="@fnetvpn | Link by TheBiz" />
+    <meta name="twitter:title" content="@fnetvpn | Link by TheBiz" />
+    <meta property="og:description" content="Link in Bio & Digital Business Card" />
+    <meta name="twitter:description" content="Link in Bio & Digital Business Card" />
+    <meta property="og:image" content="https://jds6cv02pk.execute-api.us-east-1.amazonaws.com/dev/og_memory_page.png" />
+    <meta name="twitter:image" content="https://jds6cv02pk.execute-api.us-east-1.amazonaws.com/dev/og_memory_page.png" />
+    <meta property="og:url" content="https://memory.page/fnetvpn" />
+    <meta name="twitter:url" content="https://memory.page/fnetvpn" />
+    <link rel="canonical" href="https://memory.page/fnetvpn" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://jds6cv02pk.execute-api.us-east-1.amazonaws.com/dev/link_favicon.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
+
+
+
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        font,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            vertical-align: baseline;
+        }
+
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            color: #1f1f1f;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'Inter', sans-serif;
+            height: 100%;
+        }
+
+        .bg_page {
+            background-color: #FFFFFF;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            transform: scale(1.0);
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 480px;
+            height: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .box {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 0px 80px;
+        }
+
+        .block_pic_centered_round {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto 0px auto
+        }
+
+        .block_title {
+            color: #1f1f1f;
+            font-size: 28px;
+            text-align: center;
+            font-weight: 700;
+            font-family: 'Nunito Sans', sans-serif;
+            margin: 6px auto 0px auto
+        }
+
+        .block_desc {
+            color: #949494;
+            font-size: 22px;
+            text-align: center;
+            font-family: 'Nunito Sans', sans-serif;
+            margin: 6px auto 0px auto
+        }
+
+        .block_wide_btns {
+            font-family: 'Inter', sans-serif;
+            list-style: none;
+            width: 100%;
+            padding: 0;
+            margin: 10px auto 0px auto
+        }
+
+        .block_wide_btns li {
+            padding: 10px 0px;
+        }
+
+        .block_wide_btns li a {
+            padding: 10px 0px;
+            color: #1f1f1f;
+            font-weight: 500;
+            font-size: 19px;
+            border-radius: 50px;
+            display: block;
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .block_wide_btns li.rectangle a {
+            border-radius: 0px;
+        }
+
+        .block_wide_btns li.rounded a {
+            border-radius: 10px;
+        }
+
+        .block_wide_btns li a div {
+            position: absolute;
+            left: 19px;
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .block_wide_btns li.rectangle a div {
+            border-radius: 0px;
+        }
+
+        .block_wide_btns li.rounded a div {
+            border-radius: 10px;
+        }
+
+        .block_wide_btns li a span {
+            text-align: center;
+            margin: 0px 72px;
+        }
+
+        .block_wide_btns li a div img {
+            border-radius: 50%;
+            width: 50px
+        }
+
+        .block_wide_btns li.rectangle a div img {
+            border-radius: 0px;
+        }
+
+        .block_wide_btns li.rounded a div img {
+            border-radius: 10px;
+        }
+
+        .block_space {
+            margin: auto;
+            max-width: 280px;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .block_social_btns {
+            max-width: 466px;
+            width: 100%;
+            padding: 0px;
+            margin: 5px auto 0px auto
+        }
+
+        .block_social_btns ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .block_social_btns li {
+            padding: 5px 7px;
+        }
+
+        .block_social_btns li a {
+            background: #1c0b47;
+            width: 62px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+
+        .block_social_btns li.rectangle a {
+            border-radius: 0px;
+        }
+
+        .block_social_btns li.rounded a {
+            border-radius: 10px;
+        }
+
+        .block_social_btns li a img {
+            width: inherit;
+            border-radius: 50px;
+        }
+
+        .block_social_btns li.rectangle a img {
+            border-radius: 0px;
+        }
+
+        .block_social_btns li.rounded a img {
+            border-radius: 10px;
+        }
+
+        .block_makers {
+            background: #E7E6E6;
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            padding: 0px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        .block_makers a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .block_logo {
+            width: 100%;
+            padding: 6px 0px;
+        }
+
+        .block_logo img {
+            display: block;
+            max-width: 100%;
+        }
+
+        @media (max-width:767px) {
+            .box {
+                padding: 56px 30px;
+            }
+
+            .block_pic_centered_round {
+                width: 100px;
+                height: 100px;
+            }
+
+            .block_wide_btns li {
+                padding: 6px 0px;
+            }
+
+            .block_wide_btns li a {
+                font-size: 14px;
+                min-height: 46px;
+            }
+
+            .block_wide_btns li a div {
+                left: 4px;
+            }
+
+            .block_wide_btns li a span {
+                margin: 0px 40px;
+            }
+
+            .block_wide_btns li a div img {
+                width: 30px
+            }
+
+            .block_social_btns li a {
+                width: 42px;
+                height: 42px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <style>
+        .bg_page:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-position: 50% 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(https://img95.699pic.com/photo/40151/8891.gif_wh300.gif!/fh/188);
+        }
+
+        @media screen and (max-width: 767px) {
+            .bg_page:after {
+                background-image: url(https://img95.699pic.com/photo/40151/8891.gif_wh300.gif!/fh/188);
+            }
+        }
+    </style>
+
+
+    <div class="wrapper">
+        <div class="bg_page"></div>
+        <div class="box">
+            <div class="block_pic_centered_round"> <a href="#"> <img style="width: 100%; height: auto; border-radius: 50%;" src="https://f98k5xay4d.execute-api.us-east-1.amazonaws.com/dev/36c99dfe-09f5-4032-bc5c-5414d3bd89c2.jpeg" /> </a> </div>
+            <div class="block_title" style="color:#FFFFFF; font-family: 'Rock Salt', cursive; font-weight: 400; ">FNET VPN</div>
+            <div class="block_desc" style="color:#FFFFFF; font-family: 'Almarai', sans-serif; font-weight: 300; ">ကြိုဆိုပါတယ်</div>
+            <br />
+
+            <div class="block_wide_btns">
+                <ul style="list-style:none;">
+                    <li class="circular">
+                        <a href="https://fnetvpn.github.io/th/" target="_blank" style="background-color: rgba(58, 154, 175, 1.0); border: 2px solid #3A9AAF; ">
+                            <div class="">
+                                <img src="https://jds6cv02pk.execute-api.us-east-1.amazonaws.com/dev/Website_lt.svg" alt="" />
+                            </div>
+                            <span style="color:#FFFFFF; font-family: 'Roboto', sans-serif; font-weight: 900; ">App ကို ဒေါင်းယူပါ</span>
+                        </a>
+                    </li>
+                    <li class="circular">
+                        <a href="vps.com" target="_blank" style="background-color: rgba(58, 154, 175, 1.0); border: 2px solid #3A9AAF; ">
+                            <div class="">
+                                <img src="https://jds6cv02pk.execute-api.us-east-1.amazonaws.com/dev/AddContact_lt.svg" alt="" />
+                            </div>
+                            <span style="color:#FFFFFF; font-family: 'Roboto', sans-serif; font-weight: 900; ">VPS အကောင့်ဝယ်ယူရန်</span>
+                        </a>
+                    </li>
+                    <li class="circular">
+                        <a href="thfree.com" target="_blank" style="background-color: rgba(58, 154, 175, 1.0); border: 2px solid #3A9AAF; ">
+                            <div class="">
+                                <img src="https://jds6cv02pk.execute-api.us-east-1.amazonaws.com/dev/Facebook_lt.svg" alt="" />
+                            </div>
+                            <span style="color:#FFFFFF; font-family: 'Roboto', sans-serif; font-weight: 900; ">TH-FreeNet</span>
+                        </a>
+                    </li>
+                    <li class="circular">
+                        <a href="joryyui65" target="_blank" style="background-color: rgba(58, 154, 175, 1.0); border: 2px solid #3A9AAF; ">
+                            <div class="">
+                                <img src="https://jds6cv02pk.execute-api.us-east-1.amazonaws.com/dev/Line_lt.svg" alt="" />
+                            </div>
+                            <span style="color:#FFFFFF; font-family: 'Roboto', sans-serif; font-weight: 900; ">Line Group</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <br />
+            <div class="block_social_btns">
+                <ul style="list-style:none;">
+                    <li class="circular">
+                        <a href="tel:0992349823" target="_blank" style="background-color: rgba(58, 154, 175, 1.0); ">
+                            <img src="https://jds6cv02pk.execute-api.us-east-1.amazonaws.com/dev/OfficePhone_lt.svg" alt="" />
+                        </a>
+                    </li>
+                    <li class="circular">
+                        <a href="" onclick="return false;" target="_blank" style="background-color: rgba(58, 154, 175, 1.0); ">
+                            <img src="https://jds6cv02pk.execute-api.us-east-1.amazonaws.com/dev/Email_lt.svg" alt="" />
+                        </a>
+                    </li>
+                    <li class="circular">
+                        <a href="taknds65" target="_blank" style="background-color: rgba(58, 154, 175, 1.0); ">
+                            <img src="https://jds6cv02pk.execute-api.us-east-1.amazonaws.com/dev/Facebook_lt.svg" alt="" />
+                        </a>
+                    </li>
+                    <li class="circular">
+                        <a href="https://fnetvpn.github.io/th/" target="_blank" style="background-color: rgba(58, 154, 175, 1.0); ">
+                            <img src="https://jds6cv02pk.execute-api.us-east-1.amazonaws.com/dev/Blogger_lt.svg" alt="" />
+                        </a>
+                    </li>
+                    <li class="circular">
+                        <a href="" onclick="return false;" target="_blank" style="background-color: rgba(58, 154, 175, 1.0); ">
+                            <img src="https://jds6cv02pk.execute-api.us-east-1.amazonaws.com/dev/Location_lt.svg" alt="" />
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html
